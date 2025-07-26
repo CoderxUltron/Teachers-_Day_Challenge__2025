@@ -1,11 +1,7 @@
 # HERE WE ARE SOLVING LEETCODE'S 412 problem "FIZZ BUZZ" 
 
 412. Fizz Buzz
-Solved
-Easy
-Topics
-premium lock icon
-Companies
+
 Given an integer n, return a string array answer (1-indexed) where:
 
 answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
@@ -13,8 +9,10 @@ answer[i] == "Fizz" if i is divisible by 3.
 answer[i] == "Buzz" if i is divisible by 5.
 answer[i] == i (as a string) if none of the above conditions are true.
 
+LANGUAGE : PYTHON 
 
 ## CODE : 
+
 class Solution:
     def fizzBuzz(self, n: int) -> list[str]:
         result = []
