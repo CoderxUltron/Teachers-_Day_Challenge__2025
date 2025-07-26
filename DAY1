@@ -1,19 +1,76 @@
-LEETCODE'S 1295. Find Numbers with Even Number of Digits
+LEETCODE'S 1 TWO SUM
 
-----------Given an array nums of integers, return how many of them contain an even number of digits.--------
+PROBLEM :  1  
+----------Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
-LANGUAGE : JAVA
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order..--------
+
+
+
+LANGUAGE : PYTHON
+
 
 CODE: 
 
-public class Solution {
-    public int findNumbers(int[] nums) {
-        int countEvenDigits = 0;
-        for (int num : nums) {
-            if (String.valueOf(num).length() % 2 == 0) {
-                countEvenDigits++;
-            }
-        }
-        return countEvenDigits;
-    }
-}
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        set = {}
+
+        for i , num in enumerate(nums):
+            complement = target - num
+
+            if complement in set:
+                return [set[complement], i]
+            set[num]= i
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+PROBLEM 2 :   LEETCODE-  203. Remove Linked List Elements.
+
+
+Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+
+
+LANGUAGE : PYTHON
+
+CODE : 
+
+
+class Solution:
+    def removeElements(self, head: ListNode, val: int) -> ListNode:
+       
+        while head and head.val == val:
+            head = head.next
+
+        current = head                
+        while current and current.next:
+            if current.next.val == val:
+                current.next = current.next.next 
+            else:
+                current = current.next          
+        return head
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
