@@ -10,16 +10,22 @@ Linked list operations
 Hashing and searching techniques
 Recursion, dynamic programming, and more
 📂 Each day will have its own folder (day-1/, day-2/, ...) with clearly written and compiled Java or Python solutions.
-
+---
 ## 🙌 About the Initiative
-The challenge is part of the Mission #DrGViswanathan, initiated by the alumni and supported by the Placement Office of VIT Bhopal.
-📌 Official Links:
 
-## 🔗 Challenge Website
-📊 Google Sheet Tracker
+The challenge is part of the Mission #DrGViswanathan, initiated by the alumni and supported by the Placement Office of VIT Bhopal.
+
+📌 Official Links:
+- 🔗 [Challenge Website](https://teachers-day-vitb.vercel.app)
+- 📊 [Google Sheet Tracker](https://docs.google.com/spreadsheets/d/1NXwTMflicUMhHdiVG10F5VvVrOXzAgZ9UVQ1gFPiD5k/edit?usp=sharing)
+
 The goal is to make consistent daily progress—one day, one problem at a time—to sharpen our coding skills and interview readiness.
 
+ --- 
+
+ 
 ## 💻 How I Contribute
+
 ⌨️ Code daily: Upload problem solutions in Java or Python on GitHub.
 🎥 Practice interviews: (Optional) Solve problems live or record mock interviews for skill improvement.
 📢 Share on LinkedIn: Document learning daily or weekly using challenge hashtags.
@@ -29,8 +35,11 @@ The goal is to make consistent daily progress—one day, one problem at a time�
 
 This challenge is not just about code—it's about commitment, discipline, and gratitude to the teachers and mentors who shape our paths.
 
+---
 ## 🔗 Connect with Me
 - 🔹 [LinkedIn - AYUSH JHA](https://www.linkedin.com/in/ayush-jha-34486b287/)
 - 🔹 [ GitHub - AYUSH JHA ](https://github.com/CoderxUltron)
+
+---
 ## 📌 Tags
 #TeachersdayChallenge #DrGViswanathan #VITBhopal #LearnByDoing #CodingJourney #GratitudeToTeachers #DailyCodeChallenge
