@@ -1,0 +1,61 @@
+TODAY I TACKELED TWO LEETCODE QUESTION IN TEACHERSDAY CHALLENGE :
+
+PROBLEM 1: 
+347. Top K Frequent Elements
+
+Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+
+LANGUAGE : Python 
+
+CODE : 
+
+from collections import Counter
+from typing import List
+
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        count = Counter(nums)
+        freq = [[] for _ in range(len(nums) + 1)]
+        for num, c in count.items():
+            freq[c].append(num)
+        res = []
+        for i in range(len(freq) - 1, 0, -1):
+            for num in freq[i]:
+                res.append(num)
+                if len(res) == k:
+                    return res
+
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+PROBLEM 2 :
+226. Invert Binary Tree
+
+Given the root of a binary tree, invert the tree, and return its root
+
+LANGUAGE : Python
+
+CODE : 
+
+from collections import deque
+from typing import Optional
+
+class Solution:
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        if not root:
+            return None
+        queue = deque([root])
+        while queue:
+            node = queue.popleft()
+            node.left, node.right = node.right, node.left
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+        return root
+
+
+ 
+
+
+ 
