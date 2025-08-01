@@ -1,0 +1,80 @@
+PLATFORM : CODEFORCES 
+
+
+PROBLEM 1  :   A. Next Round 
+
+CODE : 
+
+
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int n = scanner.nextInt();
+        int k = scanner.nextInt();
+
+        int[] scores = new int[n];
+        for (int i = 0; i < n; i++) {
+            scores[i] = scanner.nextInt();
+        }
+
+        int k_th_score = scores[k - 1];
+
+        int advancing_count = 0;
+
+        for (int score : scores) {
+            if (score >= k_th_score && score > 0) {
+                advancing_count++;
+            } else {
+                break;
+            }
+        }
+        
+        System.out.println(advancing_count);
+
+        scanner.close();
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+
+PROBLEM 2 : A. Beautiful Matrix 
+
+
+CODE :
+
+
+import java.util.Scanner;
+import java.lang.Math;
+
+public class BeautifulMatrix {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int rowOne = -1;
+        int colOne = -1;
+        
+        for (int r = 0; r < 5; r++) {
+            for (int c = 0; c < 5; c++) {
+                int value = scanner.nextInt();
+                if (value == 1) {
+                    rowOne = r;
+                    colOne = c;
+                }
+            }
+        }
+        
+        int targetRow = 2;
+        int targetCol = 2;
+
+        int moves = Math.abs(rowOne - targetRow) + Math.abs(colOne - targetCol);
+        
+        System.out.println(moves);
+        
+        scanner.close();
+    }
+}
