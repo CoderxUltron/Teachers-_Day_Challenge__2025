@@ -1,0 +1,71 @@
+PROBLEM 1 :
+
+<<<<<<<     "A. George and Accommodation"  on Codeforces!     >>>>>>>
+
+
+CODE:
+
+import java.util.Scanner;
+
+public class GeorgeAndAccommodation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+ 
+        int n = scanner.nextInt();
+        
+        int suitableRooms = 0;
+ 
+        for (int i = 0; i < n; i++) {
+            int p = scanner.nextInt();
+            int q = scanner.nextInt();            
+
+            if (q - p >= 2) {
+                suitableRooms++;
+            }
+        }
+
+        System.out.println(suitableRooms);
+        
+        scanner.close();
+    }
+}
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+PROBLEM 2 :
+
+<<<<<<<<<<<<<<       "A. Word" on Codeforces!   >>>>>>>>>>>>>
+
+
+CODE :
+
+
+import java.util.Scanner;
+
+public class Word {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String s = scanner.nextLine();
+        
+        int uppercaseCount = 0;
+        
+        for (int i = 0; i < s.length(); i++) {
+            if (Character.isUpperCase(s.charAt(i))) {
+                uppercaseCount++;
+            }
+        }
+        
+        int lowercaseCount = s.length() - uppercaseCount;
+
+        if (uppercaseCount > lowercaseCount) {
+            System.out.println(s.toUpperCase());
+        } else {
+            System.out.println(s.toLowerCase());
+        }
+        
+        scanner.close();
+    }
+}
