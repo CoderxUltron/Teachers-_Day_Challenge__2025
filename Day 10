@@ -1,0 +1,74 @@
+PROBLEM 1 :
+
+<<<<<<<<     "A. Nearly Lucky Number"   >>>>>>>>>>
+
+CODE : 
+
+
+import java.util.Scanner;
+
+public class NearlyLuckyNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        long n = scanner.nextLong();
+        
+        int luckyDigitCount = 0;
+
+        String s = String.valueOf(n);
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '4' || c == '7') {
+                luckyDigitCount++;
+            }
+        }
+        
+        if (luckyDigitCount == 4 || luckyDigitCount == 7) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+        
+        scanner.close();
+    }
+}
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+PROBLEM 2 :
+
+<<<<<<<<<<<     "A. Helpful Maths"  >>>>>>>>>>>>>>>
+
+CODE :
+
+
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class HelpfulMaths {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        String s = scanner.nextLine();
+        
+        String[] numbers = s.split("\\+");
+        
+        Arrays.sort(numbers);
+        
+        StringBuilder result = new StringBuilder();
+        
+        result.append(numbers[0]);
+
+        for (int i = 1; i < numbers.length; i++) {
+            result.append("+").append(numbers[i]);
+        }
+        
+         System.out.println(result.toString());
+        
+        scanner.close();
+    }
+}
