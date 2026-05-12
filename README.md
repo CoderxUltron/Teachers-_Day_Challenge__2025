@@ -9,6 +9,7 @@ Array and string manipulation
 Linked list operations
 Hashing and searching techniques
 Recursion, dynamic programming, and more
+
 📂 Each day will have its own folder (day-1/, day-2/, ...) with clearly written and compiled Java or Python solutions.
 ---
 ## 🙌 About the Initiative
